@@ -7,6 +7,7 @@ import (
 
 func main() {
 	http.HandleFunc("/", homeHandler)
+	http.HandleFunc("/about", aboutHandler)
 	fmt.Println("Server starting on port 8080...")
 	if err := http.ListenAndServe(":8080", nil); err != nil {
 		panic(err)
