@@ -16,3 +16,7 @@ func main() {
 func homeHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Welcome to the Lap Time Leaderboard!")
 }
+
+func aboutHandler(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "This is the about page")
+}
